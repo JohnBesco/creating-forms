@@ -19,6 +19,7 @@ body {
 }
 
 .form-wrapper {
+    padding: 4rem;
     margin: 0 auto;
     width: 75rem;
     height: 50.125rem;
