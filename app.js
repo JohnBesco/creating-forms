@@ -1,20 +1,27 @@
-
+const signupForm = document.getElementById("signup-form");
+const passwordInput = signupForm.elements["password"];
+const confirmPasswordInput = signupForm.elements["confirm-password"];
+const errorElement = document.getElementById("password-error");
 
 function checkPasswords() {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirm-password").value;
-    const error = document.getElementById("password-error");
+  const password = passwordInput.value;
+  const confirmPassword = confirmPasswordInput.value;
 
-    if (password !== confirmPassword) {
-        error.textContent = "Passwords do not match";
-        error.style.color = "#e74c3c";
-        confirmPassword.classList.add("error");
-        return false;
-      } else {
-        error.textContent = "";
-        error.style.color = "";
-        confirmPassword.classList.remove("error");
-        return true;
-    }
+  if (password !== confirmPassword) {
+    errorElement.textContent = "Passwords do not match";
+    errorElement.style.color = "#e74c3c";
+    confirmPasswordInput.classList.add("error");
+    return false;
+  } else {
+    errorElement.textContent = "";
+    errorElement.style.color = "";
+    confirmPasswordInput.classList.remove("error");
+    return true;
+  }
 }
-  
+
+signupForm.addEventListener("submit", function (event) {
+  if (!checkPasswords()) {
+    event.preventDefault();
+  }
+});

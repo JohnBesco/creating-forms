@@ -33,7 +33,7 @@ body {
     margin: 0 0 -1.2rem 0;
 }
 
-p {
+.form-hero-wrapper > p {
     color: #F4F4F4;
     text-align: center;
     font-family: Hind;
