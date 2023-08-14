@@ -118,6 +118,15 @@ form {
     padding: 2rem;
 }
 
+label {
+    color: #141414;
+    font-family: Hind;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .form-group {
     margin-bottom: 15px;
     display: flex;
