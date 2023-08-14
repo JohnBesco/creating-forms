@@ -147,6 +147,10 @@ label {
     cursor: pointer;
 }
 
+.sign-up-btn:hover {
+    background-color: #2c8df6;
+}
+
 input {
     border-radius: 0.3125rem;
     border: 1px solid #FFF;
