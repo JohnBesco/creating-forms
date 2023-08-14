@@ -232,3 +232,63 @@ input:focus {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+    .form-wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 80vw;
+    }
+
+    .form-hero-wrapper {
+        gap: 1rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: max-content;
+    }
+
+    #hero-img {
+        width: 16.5rem;
+        height: 12.125rem;
+        flex-shrink: 0;
+    }
+
+    .form-hero-wrapper > h1 {
+        font-size: 2.2rem;
+    }
+
+    .form-hero-wrapper > p {
+        font-size: 0.8rem;
+        width: 14.875rem;
+    }
+
+    .signup-form-wrapper > h1 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        column-gap: 1.4rem;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        height: max-content;
+        flex-shrink: 0;
+        border-radius: 0.625rem;
+        border: 1px solid #FFF;
+        background: rgba(255, 255, 255, 0.41);
+        backdrop-filter: blur(9.199999809265137px);
+        padding: 2rem;
+    }
+
+}
