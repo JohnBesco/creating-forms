@@ -172,3 +172,13 @@ input {
     font-weight: 700;
     line-height: normal;
 }
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.5);
+}
+  
+.error {
+    border-color: #e74c3c;
+    box-shadow: 0 0 3px rgba(231, 76, 60, 0.5);
+}
