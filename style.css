@@ -160,3 +160,11 @@ input {
     flex-wrap: wrap;
 }
 
+::placeholder {
+    color: #D4D4D4;
+    font-family: Hind;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
