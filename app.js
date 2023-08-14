@@ -38,4 +38,3 @@ signupForm.addEventListener('submit', function(event) {
         signupForm.elements['confirm-password'].classList.remove('error');
     }
 });
-
