@@ -33,6 +33,7 @@ signupForm.addEventListener('submit', function(event) {
     if (password !== confirmPassword) {
         signupForm.elements['password'].classList.add('error');
         signupForm.elements['confirm-password'].classList.add('error');
+        alert("Password does not match!")
     } else {    
         signupForm.elements['password'].classList.remove('error');
         signupForm.elements['confirm-password'].classList.remove('error');
